@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;1,700&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    --primary-color: #4dff5e;
+    --font-title:'Montserrat';
+    --font-default: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 100vh;
+    position: relative;
+    padding-left: 6.8rem;
+    padding-top: 16.8rem;
+    overflow: hidden;
+    
+}
+/*pseudo elemento*/
+header::before{
+    content: '';
+    background-size: cover;
+    background-image: url(./imagens/Fundo.png);
+    height: 100%;
+    width: 100%;
+    display: block;
+    position:absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+}
+    
+
+h1 {  
+    color: #D7D2D2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--font-title);
+}
+
+span {
+    color: #E9E9E9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    
+}
+.botao{
+    background-color: #4DFF5E;
+    color:black ;
+    font-family: var(--font-default);
+    padding: .25rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 2.3s;
+}
+    
+.botao:hover{
+    opacity: .5;
+
+}
+#secao-apresentacao{
+        height: 50vh;
+        display: flex;
+        padding: 6rem;
+        gap: 2rem;
+
+}
+#secao-apresentacao img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+#secao-apresentacao div{
+    max-width: 60%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
